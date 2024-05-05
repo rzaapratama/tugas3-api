@@ -1,9 +1,6 @@
-const supertest = require("supertest");
-const chai = require("chai");
+import request from "supertest";
+import { expect } from "chai";
 const app = require("/Users/macbook/Documents/Sites/Sanbercode-Batch55/Tugas3-API/testAPI.js");
-
-const request = supertest(app);
-const expect = chai.expect;
 
 describe("API Automation Testing", () => {
   it("POST Request - Create User", async () => {
